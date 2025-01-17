@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Wild with Zoofari Park">
+    <title>Zoofari Park</title>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS LIBRARY CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWSEOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <audio autoplay loop >
+        <source src="E-Project audio (online-audio-converter.com).mp3" type="audio/mpeg">
+    </audio>
+    <nav> 
+        <!-- Hamburger Icon for Smaller Screens -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">
+            <img src="images.html/filem.png" alt="Logo" class="logo-img" style="height: 90px; width: 110px; border-radius: 50%;">
+          </div>
+        <ul class="nav-links" style="display:black;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="bioinventory.html">Bio-Inventory</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." oninput="showSuggestions()" autocomplete="off">
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+        </div>
+    </nav>
+
+
+     <!-- Hero Section -->
+     <div class="hero" style="background-image: url('images.html/deosai.jpg'); height: 485px; " >
+        <div>
+            <h2 class="" data-aos="fade-right">Deosai National Park</h2>
+            <a href="word.docx" class="cta-button"data-aos="fade-right">Download Word File</a>
+
+        </div>
+    </div>
+ <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Location And Occupied Area </h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Deosai National Park, located in the northern regions of Pakistan, primarily spans across the Gilgit-Baltistan and Azad Jammu and Kashmir regions. It covers an area of approximately 4,114 square kilometers (1,588 square miles), making it one of the largest high-altitude plateaus in the world. The park is situated at an average elevation of 4,114 meters (13,497 feet) above sea level, and it is renowned for its vast grasslands, wildflower meadows, and spectacular views of the surrounding mountains. This unique ecosystem is home to a wide variety of wildlife, including the Himalayan brown bear, snow leopard, and a diverse range of bird species. Deosai is an important part of Pakistan's natural heritage and plays a crucial role in biodiversity conservation.
+                </p>
+            </div>
+    
+            <!-- Image Card Section -->
+            <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/deaosai 1.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Flora And Vegetation</h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Deosai National Park boasts a diverse range of flora and vegetation, adapted to its high-altitude and harsh climatic conditions. The vast alpine meadows are dominated by flowering plants such as Gentiana, Primula, and Anemone, which create a colorful display during the short summer. Herbaceous plants like Hippophae rhamnoides (sea buckthorn) and Astragalus thrive in the region, alongside shrubs like Cotoneaster and Rhododendron found at lower altitudes. Grasses such as Festuca and Bromus cover much of the park's plains, sustaining herbivores like yaks and wild sheep. At lower elevations, sparse forests of Juniper and Pine provide shelter to various animals. This remarkable variety of plant life is well-suited to survive the extreme temperature fluctuations, short growing seasons, and nutrient-poor conditions, making Deosai an ecologically unique and vital region.</p>
+            </div>
+    
+            <!-- Image Card Section -->
+            <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/genitiana.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div style="margin-left: 180px; margin-right: 180px;">
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+              <thead>
+                <tr>
+                  <th style="padding: 8px; background-color: #f2f2f2;">Flora Type</th>
+                  <th style="padding: 8px; background-color: #f2f2f2;">Description</th>
+                  <th style="padding: 8px; background-color: #f2f2f2;">Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 8px;">Wild Barley (<em>Hordeum vulgare</em>)</td>
+                  <td style="padding: 8px;">Wild barley is found in the park’s alpine meadows and is an important food source for grazing animals like yaks and bharals (blue sheep).</td>
+                  <td style="padding: 8px;"><img src="images.html/barley.jpg" alt="Wild Barley" style="width: 100px; height: auto;"></td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px;">Deosai Red Poppy (<em>Papaver rhoeas</em>)</td>
+                  <td style="padding: 8px;">The bright red Deosai Red Poppy adds vibrant colors to the park's meadows, particularly during the spring and summer months, making it one of the most recognizable plants of the park.</td>
+                  <td style="padding: 8px;"><img src="images.html/deosai red poppy.jpg" alt="Deosai Red Poppy" style="width: 100px; height: auto;"></td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px;">Saussurea Lappa</td>
+                  <td style="padding: 8px;">A common medicinal plant in Deosai, Saussurea Lappa thrives in the cold, alpine climate of the park and has been used in traditional medicine for centuries.</td>
+                  <td style="padding: 8px;"><img src="images.html/Saussurea Lappa.jpg" alt="Saussurea Lappa" style="width: 100px; height: auto;"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Fauna And Species Found</h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Deosai National Park is a rich wildlife haven, home to a wide range of fauna, many of which are rare or endangered. The park is famous for its population of the critically endangered Himalayan Brown Bear, and other notable mammals include the Markhor, Musk Deer, Snow Leopard, and Wild Boar. Herds of Ibex and Blue Sheep roam the higher ridges, while smaller mammals like the Himalayan Marmot are commonly found. The park is also a birdwatcher’s paradise, with over 200 bird species, including the Golden Eagle, Peregrine Falcon, and migratory species like the Bar-headed Geese and Common Crane. Reptiles and amphibians, though few, include Lizards and Frogs adapted to the high-altitude climate. The park’s rich flora supports a variety of insects such as Butterflies and Beetles, which play an essential role in pollination. The diverse fauna of Deosai is an integral part of its fragile ecosystem, and conservation efforts are vital to preserving these species.
+             </p>
+        </div>
+    </div>
+ </div>
+
+ <div class="description"> 
+    <div class="container my-5">
+        <h4 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">These Include</h4>
+
+    </div>
+ </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/Peregrine Falcon.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title"> Peregrine Falcon</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/markhor card 3.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Markhor</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/boar.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Wild Boar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+               <!-- videos from youtube -->
+<h1 style="color:rgba(13, 116, 243, 0.6); ; text-align: center;">Watch Our Documentries</h1>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/nG-6I812mWE" data-aos="fade-right" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/iiWAhJVPxtU" data-aos="fade-right" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+   <!-- footer -->
+   <footer>
+    <div class="container-fluid">
+        <div class="row">
+             <!-- Our Motto Section -->
+        <div class="col-md-4 text-center">
+            <h5 style="font-size: 1.8rem; font-weight: bold;">Our Motto</h5>
+            <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.8;">
+                At Zoofari Park, we believe in bridging the gap between humanity and nature. Our mission is to inspire love and respect for wildlife by providing immersive and educational experiences. By fostering a deeper connection with the natural world, we aim to create lasting memories and encourage stewardship for the planet’s incredible biodiversity.
+            </p>
+        </div>
+
+            <!-- Follow Our Socials Section -->
+            <div class="col-md-3 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Follow Our Socials</h5>
+                <p>
+                    <a href="https://www.instagram.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-instagram" style="margin-right: 8px;"></i>Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-facebook-f" style="margin-right: 8px;"></i>Facebook
+                    </a>
+                </p>
+                <p><a href="https://www.youtube.com/@WWFPakistanOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></p>
+            </div>
+        <!-- LOCATION-->
+<div class="col-md-3 text-center" style="position: relative; z-index: 10;">
+<h5 style="font-size: 1.8rem; font-weight: bold;">Location</h5>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.445361209694!2d75.4692486755586!3d34.97050767282502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e38bb6f78c2f95%3A0x91d536c155585ae!2sDeosai%20National%20Park!5e0!3m2!1sen!2s!4v1736177468580!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+        </div>
+    </div>
+    <p class="mt-3 text-center" style="font-size: 1rem; font-weight: 600;">&copy; 2024 Zoofari Park. All rights reserved.</p>
+</footer>
+<script>
+    // List of predefined suggestions with corresponding card-specific URLs
+    const suggestionsWithUrls = {
+        "Central Karakoram National Park": "centralpark.html",
+        "Borghil Valley National Park": "borghil.html",
+        "Kirthar National Park": "kirthar.html",
+        "Saif ul Muluk National Park": "sfm.html",
+        "Chitral National Park": "chitral.html",
+        "Deosai National Park": "deosai.html",
+        "About Us": "aboutus.html",
+        "Nature Trails": "trails.html",
+       "Bio-Inventory": "bioinventory.html",
+           "Contact Us": "contactus.html"
+    };
+
+    function showSuggestions() {
+        const input = document.getElementById("search-input").value.toLowerCase();
+        const suggestionBox = document.getElementById("autocomplete-list");
+        suggestionBox.innerHTML = "";
+
+        if (input.trim() === "") {
+            return; // If input is empty, clear suggestions
+        }
+
+        // Filter suggestions based on input
+        const filteredSuggestions = Object.keys(suggestionsWithUrls).filter(item => item.toLowerCase().includes(input));
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement("div");
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.classList.add("autocomplete-suggestion");
+            suggestionDiv.onclick = () => {
+                window.open(suggestionsWithUrls[suggestion], "_blank"); // Open the corresponding link in a new tab
+            };
+            suggestionBox.appendChild(suggestionDiv);
+        });
+    }
+
+    function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+
+        if (query === "") {
+            alert("Please enter a search term!");
+            return;
+        }
+
+        // Navigate to the corresponding link if the query matches a suggestion
+        if (suggestionsWithUrls[query]) {
+            window.open(suggestionsWithUrls[query], "_blank"); // Open the link in a new tab
+        } else {
+            alert("No matching page found for: " + query);
+        }
+    }
+
+    // Close suggestions dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        const suggestionBox = document.getElementById("autocomplete-list");
+        if (!e.target.closest(".search-container")) {
+            suggestionBox.innerHTML = "";
+        }
+    });
+</script>
+  
+<script>
+    // Function for showing/hiding the hamburger menu on small screens
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+<script src="script.js"> </script>
+
+</body>
+</html>

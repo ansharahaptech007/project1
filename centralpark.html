@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Wild with Zoofari Park">
+    <title>Zoofari Park</title>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS LIBRARY CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWSEOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <audio autoplay loop >
+        <source src="E-Project audio (online-audio-converter.com).mp3" type="audio/mpeg">
+    </audio>
+    <nav> 
+        <!-- Hamburger Icon for Smaller Screens -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">
+            <img src="images.html/filem.png" alt="Logo" class="logo-img" style="height: 90px; width: 110px; border-radius: 50%;">
+          </div>
+        <ul class="nav-links" style="display:black;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="bioinventory.html">Bio-Inventory</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." oninput="showSuggestions()" autocomplete="off">
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+        </div>
+    </nav>
+
+
+     <!-- Hero Section -->
+     <div class="hero" style="background-image: url('images.html/central.jpg'); height: 485px; " >
+        <div>
+            <h2 class="" data-aos="fade-right">Central Karakoram National Park</h2>
+            <a href="word.docx" class="cta-button"data-aos="fade-right">Download Word File</a>
+        </div>
+    </div>
+ <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Location And Occupied Area </h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Central Karakoram National Park (CKNP) is located in the Gilgit-Baltistan region of northern Pakistan, encompassing the breathtaking landscapes of the Karakoram Range. It is one of the largest protected areas in Pakistan, covering an area of approximately 10,000 square kilometers (3,861 square miles). The park stretches across the districts of Skardu, Gilgit, and Hunza-Nagar, and is home to some of the world’s highest peaks, including K2 (8,611 meters), the second-highest mountain on Earth. CKNP's vast expanse also includes numerous glaciers, such as the Baltoro, Biafo, and Siachen, making it a crucial region for glaciology and water resources in the region. Its strategic location and unique geography make it a haven for biodiversity, eco-tourism, and mountaineering enthusiasts from around the globe. </p>
+            </div>
+    
+            <!-- Image Card Section -->
+            <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/central1.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Flora And Vegetation</h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Central Karakoram National Park (CKNP) boasts a diverse range of flora and vegetation, shaped by its unique geography and varying altitudes. The park's vegetation transitions from dry alpine shrubs to lush green meadows as the elevation changes, supporting a rich ecological spectrum. At lower altitudes, the valleys feature juniper, birch, and willow trees, which form essential habitats for local wildlife and provide soil stability. Moving higher, alpine meadows dominate, with a vibrant display of wildflowers such as blue poppies, asters, and primroses during the short growing season.
+
+                    In the uppermost regions, where conditions are harsher, vegetation becomes sparse, with mosses, lichens, and hardy cushion plants clinging to rocky terrains. These plants play a vital role in preventing soil erosion and contributing to the nutrient cycle in the fragile high-altitude ecosystems. CKNP’s vegetation not only enhances its scenic beauty but also sustains a delicate ecological balance, supporting various herbivores and acting as a foundation for the survival of its rare and endangered fauna.
+                </p>
+            </div>
+    
+            <!-- Image Card Section -->
+            <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/juniper.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- table!!!!!!!!!! -->
+     <div class="container">
+        <div style="margin-left: 180px; margin-right: 180px;">
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+              <thead>
+                <tr>
+                  <th style="padding: 8px; background-color: #f2f2f2;">Flora Type</th>
+                  <th style="padding: 8px; background-color: #f2f2f2;">Description</th>
+                  <th style="padding: 8px; background-color: #f2f2f2;">Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 8px;">Betula (Birch) Forests</td>
+                  <td style="padding: 8px;">Betula species can be found in the cooler valleys of Central Karakoram, contributing to the park’s rich biodiversity and offering a range of habitats for various species.</td>
+                  <td style="padding: 8px;"><img src="images.html/birch tree.jpg" alt="Betula Forests" style="width: 100px; height: auto;"></td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px;"><em>Artemisia brevifolia</em></td>
+                  <td style="padding: 8px;">A hardy shrub that grows in the park’s high-altitude grasslands, adapted to the extreme climatic conditions of the region.</td>
+                  <td style="padding: 8px;"><img src="images.html/gpt image brevifolia.webp" alt="Artemisia brevifolia" style="width: 100px; height: auto;"></td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px;"><em>Artemisia maritima</em></td>
+                  <td style="padding: 8px;">Commonly found in Central Karakoram's dry grasslands, this species adds to the region’s diverse plant life, thriving in the arid conditions of the park.</td>
+                  <td style="padding: 8px;"><img src="images.html/maritmia.webp" alt="Artemisia maritima" style="width: 100px; height: auto;"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>    
+     </div>
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Fauna And species found</h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Central Karakoram National Park (CKNP) is a biodiversity hotspot, home to a wide variety of fauna, including some of the world’s most iconic and endangered species. Among the mammals, the snow leopard, a symbol of high-altitude wilderness, is the park's flagship species. Other large mammals include the Himalayan ibex, blue sheep, and the elusive brown bear, all of which thrive in the park's rugged, remote landscapes. Smaller mammals, such as marmots and hares, are also common and play critical roles in the park’s food chain.
+
+                    The park is equally renowned for its avian diversity, making it a haven for birdwatchers. Birds of prey such as the golden eagle, Himalayan griffon vulture, and lammergeier soar high above the park, while ground-dwelling species like the chukar partridge and snowcock inhabit the rocky terrain. The region also supports rare reptiles and amphibians adapted to the extreme climate, further enhancing its ecological significance. 
+             </p>
+        </div>
+    </div>
+ </div>
+
+ <div class="description"> 
+    <div class="container my-5">
+        <h4 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">These Include</h4>
+
+    </div>
+ </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/central a 1.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Marmots</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/central a 2.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Bluefaced Leicester</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/central a 3.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Hares</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- videos from youtube -->
+        <h1 style="color:rgba(13, 116, 243, 0.6); ; text-align: center;">Watch Our Documentries</h1>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;"data-aos="fade-right">
+            <iframe width="1200" height="675" src="https://www.youtube.com/embed/O7Yjg6IS1kw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;"data-aos="fade-right">
+            <iframe width="1200" height="675" src="https://www.youtube.com/embed/llQ8V6R_u4E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+ <!-- footer -->
+ <footer>
+    <div class="container-fluid">
+        <div class="row">
+             <!-- Our Motto Section -->
+        <div class="col-md-4 text-center">
+            <h5 style="font-size: 1.8rem; font-weight: bold;">Our Motto</h5>
+            <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.8;">
+                At Zoofari Parks, we believe in bridging the gap between humanity and nature. Our mission is to inspire love and respect for wildlife by providing immersive and educational experiences. By fostering a deeper connection with the natural world, we aim to create lasting memories and encourage stewardship for the planet’s incredible biodiversity.
+            </p>
+        </div>
+
+            <!-- Follow Our Socials Section -->
+            <div class="col-md-3 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Follow Our Socials</h5>
+                <p>
+                    <a href="https://www.instagram.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-instagram" style="margin-right: 8px;"></i>Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-facebook-f" style="margin-right: 8px;"></i>Facebook
+                    </a>
+                </p>
+                <p><a href="https://www.youtube.com/@WWFPakistanOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></p>
+            </div>
+        <!-- LOCATION-->
+<div class="col-md-3 text-center" style="position: relative; z-index: 10;">
+<h5 style="font-size: 1.8rem; font-weight: bold;">Location</h5>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415924.67915777117!2d75.41284318429287!3d35.469359881892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e463763d6a27d5%3A0x3664f574f73e8637!2sCentral%20Karakoram%20National%20Park!5e0!3m2!1sen!2s!4v1736223312338!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+        </div>
+    </div>
+    <p class="mt-3 text-center" style="font-size: 1rem; font-weight: 600;">&copy; 2025 National Parks Web-Portal(Zoofari-Ltd.). All rights reserved.</p>
+</footer>
+<script>
+    // List of predefined suggestions with corresponding card-specific URLs
+    const suggestionsWithUrls = {
+        "Central Karakoram National Park": "centralpark.html",
+        "Borghil Valley National Park": "borghil.html",
+        "Kirthar National Park": "kirthar.html",
+        "Saif ul Muluk National Park": "sfm.html",
+        "Chitral National Park": "chitral.html",
+        "Deosai National Park": "deosai.html",
+        "About Us": "aboutus.html",
+        "Nature Trails": "trails.html",
+        "Bio-Inventory": "bioinventory.html",
+            "Contact Us": "contactus.html"
+    };
+
+    function showSuggestions() {
+        const input = document.getElementById("search-input").value.toLowerCase();
+        const suggestionBox = document.getElementById("autocomplete-list");
+        suggestionBox.innerHTML = "";
+
+        if (input.trim() === "") {
+            return; // If input is empty, clear suggestions
+        }
+
+        // Filter suggestions based on input
+        const filteredSuggestions = Object.keys(suggestionsWithUrls).filter(item => item.toLowerCase().includes(input));
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement("div");
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.classList.add("autocomplete-suggestion");
+            suggestionDiv.onclick = () => {
+                window.open(suggestionsWithUrls[suggestion], "_blank"); // Open the corresponding link in a new tab
+            };
+            suggestionBox.appendChild(suggestionDiv);
+        });
+    }
+
+    function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+
+        if (query === "") {
+            alert("Please enter a search term!");
+            return;
+        }
+
+        // Navigate to the corresponding link if the query matches a suggestion
+        if (suggestionsWithUrls[query]) {
+            window.open(suggestionsWithUrls[query], "_blank"); // Open the link in a new tab
+        } else {
+            alert("No matching page found for: " + query);
+        }
+    }
+
+    // Close suggestions dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        const suggestionBox = document.getElementById("autocomplete-list");
+        if (!e.target.closest(".search-container")) {
+            suggestionBox.innerHTML = "";
+        }
+    });
+</script>
+  
+<script>
+    // Function for showing/hiding the hamburger menu on small screens
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+<script src="script.js"> </script>
+
+</body>
+</html>

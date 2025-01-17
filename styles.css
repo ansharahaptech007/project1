@@ -1,0 +1,518 @@
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #3e3e3e;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #f7f7f7;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); Subtle shadow */
+}
+
+.search-input{
+    border: none;
+}
+
+.search-input:hover {
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 15px 50px rgba(13, 116, 243, 0.6); 
+}
+
+.search-button {
+    background-color: #f2c9a2; /* Softer golden shade */
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    box-shadow: 0 15px 50px rgba(13, 116, 243, 0.6); 
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/safari-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #f2c9a2; /* Softer golden shade */
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d1b38f;
+    box-shadow: 0 15px 50px rgba(13, 116, 243, 0.6); 
+}
+
+/* About Section */
+.about {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #333;
+
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2d2d2d;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about .cta-button {
+    background-color: #3a5a40;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(13, 116, 243, 0.6); ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    height: 400px; /* Set a fixed height for all cards */
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(13, 116, 243, 0.6); 
+}
+
+.card-title {
+    font-size: 1.6rem;
+    color: #2d2d2d;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+footer {
+position: relative; /* To allow layering of the image behind it */
+color: #fff;
+text-align: center;
+padding: 30px 0;
+background: transparent; /* Transparent to show the image */
+z-index: 2; /* Ensures footer content is above the background */
+}
+
+/* Footer Background Image */
+footer::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url('images.html/footer 1.jpg') no-repeat center center/cover;
+z-index: 1; /* Places the image behind footer content */
+opacity: 0.8; /* Slight fade for better readability */
+}
+
+/* Ensures content is above the background */
+footer h5, footer p, footer a {
+position: relative;
+z-index: 2;
+color: #ffffff; /* Adjusted text color for contrast */
+}
+
+/* Heading Styles */
+footer h5 {
+font-size: 1.8rem; /* Adjust font size for prominence */
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+/* List Styling for Links */
+footer ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+footer ul li {
+margin-bottom: 10px;
+}
+
+footer ul li a {
+color: #ffffff;
+text-decoration: none;
+font-size: 1.2rem;
+transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+color: #f2c9a2; /* Adds hover effect for links */
+}
+
+/* Icon Styling */
+footer a i {
+margin-right: 8px; /* Space between icon and text */
+font-size: 1.5rem;
+vertical-align: middle;
+}
+
+
+
+.autocomplete-suggestions {
+    border: 1px solid #ccc;
+    background: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1000;
+    width: calc(100% - 22px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+    background: #f2c9a2;
+}
+
+/* Initial Style for Nav */
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 12px 20px;
+z-index: 10; /* Keeps the nav above other elements */
+background: transparent; /* Transparent background */
+}
+
+nav a {
+margin: 0 20px;
+font-size: 1.2rem;
+color: #fff;
+transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 15px;
+    background-color: transparent; /* Matches navbar background color */
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: #fff; /* White text on navbar background */
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* Hamburger button for smaller screens */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #fff; /* Hamburger icon color */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px; /* Ensures links are under the hamburger */
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0;
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+
+    .nav-links li a {
+        background-color: transparent; /* Keeps the background same as navbar */
+        color: #fff; /* White text */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+.col-md-8{
+    justify-content: center;
+    display: flex;
+}
+
+/* Flexbox layout */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.text-div {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.image-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-div img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-div, .image-div {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .hamburger {
+            display: block;
+        }
+
+}
+
+
+/* about on about us page  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    text-align: justify;
+    padding-right: 2%;
+}
+
+.image-content {
+    flex: 1;
+    padding-left: 2%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* h2 from about us page */
+.about-container h2 {
+    font-size: 2.5rem; /* Makes the heading larger */
+    color: #2c3e50; /* A dark color for prominence */
+    text-align: center; /* Centers the heading */
+    font-weight: bold; /* Makes the heading bold */
+    margin-bottom: 20px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes the text all uppercase for emphasis */
+}
+
+.image-content {
+    position: relative; /* Enables positioning for the overlay */
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.image-content img:hover {
+     transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(13, 116, 243, 0.6); 
+}
+.table-container {
+    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+  }
+  
+  table {
+    width: 100%; /* Ensures the table takes full width of the container */
+    border-collapse: collapse; /* Removes space between cells */
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+      font-size: 14px; /* Reduce font size for small screens */
+    }
+  
+    th, td {
+      padding: 6px; /* Reduce padding for smaller screens */
+    }
+  }
+
+  /* FOR ABOUT US THAT WAS NOT RESPONSIVE BEFORE */
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-container .text-content {
+        margin-bottom: 20px;
+    }
+
+    .about-container .image-content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.guide-content {
+        margin-top: 20px;
+    }
+ ul {
+        list-style-type:decimal;
+    }

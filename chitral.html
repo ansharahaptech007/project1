@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Wild with Zoofari Park">
+    <title>Zoofari Park</title>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS LIBRARY CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWSEOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <audio autoplay loop >
+        <source src="E-Project audio (online-audio-converter.com).mp3" type="audio/mpeg">
+    </audio>
+    <nav> 
+        <!-- Hamburger Icon for Smaller Screens -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">
+            <img src="images.html/filem.png" alt="Logo" class="logo-img" style="height: 90px; width: 110px; border-radius: 50%;">
+          </div>
+        <ul class="nav-links" style="display:black;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="bioinventory.html">Bio-Inventory</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." oninput="showSuggestions()" autocomplete="off">
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+        </div>
+    </nav>
+
+
+     <!-- Hero Section -->
+     <div class="hero" style="background-image: url('images.html/chitral.jpg'); height: 485px; " >
+        <div>
+            <h2 class="" data-aos="fade-right">Chitral National Park</h2>
+            <a href="word.docx" class="cta-button"data-aos="fade-right">Download Word File</a>
+
+        </div>
+    </div>
+ <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Location And Occupied Area </h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Chitral Gol National Park, also known as Chitral National Park, is situated in the Lower Chitral District of Khyber Pakhtunkhwa province, Pakistan. The park lies adjacent to the Chitral River and is approximately a two-hour drive from Chitral town. 
+                    The park encompasses an area of 7,750 hectares (about 77.5 square kilometers). 
+                    The terrain of Chitral Gol National Park is characterized by rugged mountains with steep slopes, ranging in elevation from 1,450 meters to about 5,000 meters above sea level. The park features a narrow valley that extends approximately 18 kilometers before branching into three sub-valleys and a basin surrounded by cliffs and high peaks. 
+                </p>            
+            </div>
+    
+            <!-- Image Card Section -->
+            <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/chitral 1.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Flora And Vegetation</h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Prior to the park's establishment, there was significant exploitation of trees, herbs, and shrubs by local communities for firewood, timber, and medicinal purposes. Although the park's creation has mitigated some of these pressures, challenges remain in balancing conservation efforts with the needs of local populations. 
+                    The diverse flora of Chitral Gol National Park not only contributes to its ecological richness but also supports the livelihoods of surrounding communities. Ongoing conservation efforts are essential to preserve this botanical diversity for future generations. Chitral Gol National Park, located in the Lower Chitral District of Khyber Pakhtunkhwa, Pakistan, boasts a diverse range of flora and vegetation types, influenced by its varying altitudes, soil composition, and water availability.</p>
+
+            </div>
+    
+            <!-- Image Card Section -->
+            <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/chitral flora 1.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- tableeeee -->
+       <div class="table-container">
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+            <div style="margin-left:180px; margin-right: 180px;">
+                <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <!-- Your table content here -->
+          <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+            <thead>
+                <tr>
+                    <th style="padding: 8px; background-color: #f2f2f2;">Flora Type</th>
+                    <th style="padding: 8px; background-color: #f2f2f2;">Description</th>
+                    <th style="padding: 8px; background-color: #f2f2f2;">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 8px;">Baloot (Quercus baloot) Forests</td>
+                    <td style="padding: 8px;">Prevalent at elevations between 1,220 and 1,830 meters, especially on warmer slopes. Often appear in pure stands at lower elevations with a more open canopy on cooler slopes.</td>
+                    <td style="padding: 8px;"><img src="images.html/baloot.jpg" alt="Baloot Forests" style="width: 100px; height: auto;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Coniferous Forests</td>
+                    <td style="padding: 8px;">Dominated by deodar (Cedrus deodara) and chilghoza pine (Pinus gerardiana). Covers about 13% of the park's area, with juniper forests occupying about 4%.</td>
+                    <td style="padding: 8px;"><img src="images.html/coniferous tree.jpg" alt="Coniferous Forests" style="width: 100px; height: auto;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Alpine Herbaceous Vegetation</td>
+                    <td style="padding: 8px;">Found at higher elevations, this zone comprises a variety of herbaceous plants adapted to cold climates.</td>
+                    <td style="padding: 8px;"><img src="images.html/chitral alpine tree.jpg" alt="Alpine Vegetation" style="width: 100px; height: auto;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Fauna And Species Found</h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    The park's wide range of altitudes creates a variety of habitats, from the lush, temperate forests in the lower elevations to the rugged, snow-covered peaks at higher altitudes. This unique landscape supports a variety of wildlife, such as the HIMALAYAN IBEX, WILD BOAR, and the elusive LEOPARD, along with the endangered MARKHOR, which is known for its impressive spiral horns. The park is also an important habitat for migratory bird species, with its alpine meadows serving as a feeding ground for various birds of prey, including the majestic GOLDEN EAGLE and the EURASIAN EAGLE OWL. Moreover, the lush forests, composed of species like pine, fir, and walnut, add to the park's richness. Beyond its ecological significance, Chitral National Park also plays a vital role in preserving the region's cultural heritage, as the indigenous communities depend on the park’s resources for their traditional way of life, making it a crucial area for both conservation and sustainable living.
+             </p>
+        </div>
+    </div>
+ </div>
+
+ <div class="description"> 
+    <div class="container my-5">
+        <h4 style="color:rgba(13, 116, 243, 0.6); text-align: center; font-size: 2.5rem;">These Include</h4>
+
+    </div>
+ </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/Eurasian Eagle Owl.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Eurasian Owl</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/Golden Eagle.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Golden Eagle</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                <img src="images.html/leapoard.jpg" class="card-img-top" alt="Safari Animal" height="300px"> 
+                    <div class="card-body">
+                            <h3 class="card-title">Leapoard</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <br>
+    <br>
+   
+        <!-- videos from youtube -->
+<h1 style="color:rgba(13, 116, 243, 0.6); ; text-align: center;">Watch Our Documentries</h1>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/DKO6QUQpde8" data-aos="fade-right" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/fqZLir9Nnrc" data-aos="fade-right"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+   <!-- footer -->
+   <footer>
+    <div class="container-fluid">
+        <div class="row">
+             <!-- Our Motto Section -->
+        <div class="col-md-4 text-center">
+            <h5 style="font-size: 1.8rem; font-weight: bold;">Our Motto</h5>
+            <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.8;">
+                At Zoofari Park, we believe in bridging the gap between humanity and nature. Our mission is to inspire love and respect for wildlife by providing immersive and educational experiences. By fostering a deeper connection with the natural world, we aim to create lasting memories and encourage stewardship for the planet’s incredible biodiversity.
+            </p>
+        </div>
+
+            <!-- Follow Our Socials Section -->
+            <div class="col-md-3 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Follow Our Socials</h5>
+                <p>
+                    <a href="https://www.instagram.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-instagram" style="margin-right: 8px;"></i>Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-facebook-f" style="margin-right: 8px;"></i>Facebook
+                    </a>
+                </p>
+                <p><a href="https://www.youtube.com/@WWFPakistanOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></p>
+            </div>
+        <!-- LOCATION-->
+<div class="col-md-3 text-center" style="position: relative; z-index: 10;">
+<h5 style="font-size: 1.8rem; font-weight: bold;">Location</h5>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.1310522470003!2d71.68904557560181!3d35.894805872518994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38c4b320ea4a59bd%3A0x87087be0e33d7c4f!2sChitral%20Gol%20National%20Park!5e0!3m2!1sen!2s!4v1736177583069!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+        </div>
+    </div>
+    <p class="mt-3 text-center" style="font-size: 1rem; font-weight: 600;">&copy; 2024 Zoofari Park. All rights reserved.</p>
+</footer>
+<script>
+    // List of predefined suggestions with corresponding card-specific URLs
+    const suggestionsWithUrls = {
+        "Central Karakoram National Park": "centralpark.html",
+        "Borghil Valley National Park": "borghil.html",
+        "Kirthar National Park": "kirthar.html",
+        "Saif ul Muluk National Park": "sfm.html",
+        "Chitral National Park": "chitral.html",
+        "Deosai National Park": "deosai.html",
+        "About Us": "aboutus.html",
+        "Nature Trails": "trails.html",
+        "Bio-Inventory": "bioinventory.html",
+            "Contact Us": "contactus.html"
+    };
+
+    function showSuggestions() {
+        const input = document.getElementById("search-input").value.toLowerCase();
+        const suggestionBox = document.getElementById("autocomplete-list");
+        suggestionBox.innerHTML = "";
+
+        if (input.trim() === "") {
+            return; // If input is empty, clear suggestions
+        }
+
+        // Filter suggestions based on input
+        const filteredSuggestions = Object.keys(suggestionsWithUrls).filter(item => item.toLowerCase().includes(input));
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement("div");
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.classList.add("autocomplete-suggestion");
+            suggestionDiv.onclick = () => {
+                window.open(suggestionsWithUrls[suggestion], "_blank"); // Open the corresponding link in a new tab
+            };
+            suggestionBox.appendChild(suggestionDiv);
+        });
+    }
+
+    function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+
+        if (query === "") {
+            alert("Please enter a search term!");
+            return;
+        }
+
+        // Navigate to the corresponding link if the query matches a suggestion
+        if (suggestionsWithUrls[query]) {
+            window.open(suggestionsWithUrls[query], "_blank"); // Open the link in a new tab
+        } else {
+            alert("No matching page found for: " + query);
+        }
+    }
+
+    // Close suggestions dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        const suggestionBox = document.getElementById("autocomplete-list");
+        if (!e.target.closest(".search-container")) {
+            suggestionBox.innerHTML = "";
+        }
+    });
+</script>
+  
+<script>
+    // Function for showing/hiding the hamburger menu on small screens
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+<script src="script.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nature Of Pakistan.">
+    <title>Zoofari Park</title>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS LIBRARY CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWSEOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <audio autoplay loop >
+        <source src="E-Project audio (online-audio-converter.com).mp3" type="audio/mpeg">
+    </audio>
+<nav> 
+        <!-- Hamburger Icon for Smaller Screens -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">
+            <img src="images.html/filem.png" alt="Logo" class="logo-img" style="height: 90px; width: 110px; border-radius: 50%;">
+          </div>
+         <ul class="nav-links" style="display:black;">
+           <strong> <li><a href="index.html">Home</a></li></strong> 
+           <strong> <li><a href="aboutus.html">About Us</a></li></strong>
+           <strong> <li><a href="trails.html">Trails</a></li></strong>
+          <strong><li><a href="bioinventory.html">Bio-Inventory</a></li> </strong>  
+           <strong><li><a href="contactus.html">Contact Us</a></li></strong> 
+        </ul>
+    
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." oninput="showSuggestions()" autocomplete="off">
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images.html/Mountain.jpg');" >
+        <div>
+            <h2 class="" data-aos="fade-right">Experience the Safari Like Never Before</h2>
+            <a href="bioinventory.html" class="cta-button"data-aos="fade-right">EXPLORE NOW</a>
+        </div>
+    </div>
+   <!-- about  -->
+<div class="about" data-aos="fade-right">
+    <h2>Why Zoofari?</h2>
+    <p style="text-align: justify;">
+        At Zoofari Park, every moment is an invitation to embark on an unforgettable journey. From awe-inspiring wildlife encounters to serene landscapes that transport you to the heart of the wilderness, Zoofari is more than just a safari—it’s an experience that connects you to nature's soul. 
+        Explore our guided tours, where expert rangers unveil the secrets of the wild, and immerse yourself in interactive educational programs designed for all ages. Discover the beauty, mystery, and magic of the animal kingdom like never before.
+        Whether you're seeking adventure, tranquility, or a deeper understanding of the natural world, Zoofari Park promises to leave you inspired, enriched, and eager to return for more.
+    </p>
+    <br>
+    <a href="aboutus.html" class="cta-button">Learn More</a>
+</div>
+
+<!-- welcome card -->
+<div class="container my-5">
+    <div class="card mb-3" data-aos="fade-right" style="max-height: 300px; overflow: hidden;">
+        <div class="row g-0">
+            <!-- Image Section -->
+            <div class="col-md-4">
+                <img src="images.html/beforecardsimage.jpg" class="img-fluid rounded-start" alt="Welcome Image" style="max-height: 300px; object-fit: cover;">
+            </div>
+            <!-- Text Section -->
+            <div class="col-md-8">
+                <div class="card-body" style="text-align: justify; padding: 10px;">
+                    <h5 class="card-title" style="font-size: 1.8rem; margin-bottom: 2px;">Welcome to The National Wildlife Sanctuary's Web-Portal</h5>
+                    <p class="card-text" style="font-size: 1rem; margin-top: 0;">
+                        We are excited to have you here! Explore our wide range of regional and endangered species 
+                        including Mammal Fauna and Flora to make the most of your experience with us. Whether you're 
+                        looking for Tall mountains of Skardu, or the beautiful waterfalls of Baluchistan we have 
+                        something for everyone. Let's dive in!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Cards Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="centralpark.html"> <img src="images.html/central.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">CENTRAL KARAKORAM NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="borghil.html"> <img src="images.html/borghil.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">BORGHIL VALLEY NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="ayubia.html"> <img src="images.html/ayubia 1.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title"> AYUBIA NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="sfm.html"> <img src="images.html/sfm.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">SAIF UL MULUKNATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="chitral.html"> <img src="images.html/chitral.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">CHITRAL NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="deosai.html"> <img src="images.html/deosai.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">DEOSAI NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+       <!-- New Section: Big Heading and Paragraph with Image Card -->
+        <div class="description"> 
+            <div class="container my-5">
+                <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Discover the Beauty of Nature</h3>
+                <div class="row mt-4">
+                    <!-- Paragraph Section -->
+                    <div class="col-md-8">
+                        <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                            At Zoofari Park, every moment is an invitation to embark on an unforgettable journey into the heart of nature. From the moment you step through our gates, you're not just entering a park—you're immersing yourself in an experience that transcends the ordinary. Picture yourself strolling through lush landscapes, where the air is filled with the calls of exotic birds, the rustling of leaves, and the thrill of wildlife encounters around every corner. Our guided tours offer a unique opportunity to connect with nature, led by expert rangers who share their knowledge and passion for the environment. They’ll reveal the hidden wonders of the wild, from the smallest insects to the majestic predators that roam freely in their natural habitats.
+            
+            Zoofari Park isn't just about observing wildlife—it's about feeling a deeper connection with the earth. Our interactive educational programs are designed for all ages, making it easy for families, schools, and nature enthusiasts to learn about the delicate ecosystems that make up our world. </p>
+                    </div>
+            
+                    <!-- Image Card Section -->
+                    <div class="col-md-4">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="images.html/para.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;">
+                            <div class="card-body">
+                                <p class="card-text" style="color: #fff; background-color:0 15px 50px rgba(13, 116, 243, 0.6); ; text-align: center;">Experience the wilderness up close and personal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container my-5">
+                <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">MARKHOR: The Crowns Of North</h3>
+                <div class="row mt-4">
+                    <!-- Paragraph Section -->
+                    <div class="col-md-8">
+                        <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                            Pakistan's national animal, is a strikingly majestic wild goat known for its spiraled horns and rugged beauty. Found in the steep, rocky terrain of the Himalayan, Karakoram, and Hindu Kush mountain ranges, it thrives in regions like Chitral Gol National Park, Kirthar National Park, and other protected areas across northern and western Pakistan. Markhors are highly agile, skillfully navigating the rugged landscapes and feeding on grasses, leaves, and shrubs. Their distinctively twisted horns can grow up to 160 centimeters in males, making them a symbol of resilience and strength. These animals play a vital ecological role by helping maintain vegetation balance in their habitats. Unfortunately, markhors have faced significant threats due to overhunting, poaching, and habitat loss, leading to their classification as an endangered species. However, conservation programs and community-based initiatives, such as those implemented by the Wildlife Department of Pakistan and international organizations like WWF, have contributed to a remarkable recovery in their population. Today, the markhor stands as a symbol of successful wildlife conservation, inspiring efforts to protect the country's rich biodiversity. </p>
+                    </div>
+            
+                    <!-- Image Card Section -->
+                    <div class="col-md-4">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="images.html/markhor card 3.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;">
+                            <div class="card-body">
+                                <p class="card-text" style="color: #fff; background-color:0 15px 50px rgba(13, 116, 243, 0.6); ; text-align: center;">Experience the wilderness up close and personal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container my-5">
+                <h3 style="color:rgba(13, 116, 243, 0.6); ; text-align: center; font-size: 2.5rem;">Big cats Of Deosai/ Ayubia National Park</h3>
+                <div class="row mt-4">
+                    <!-- Paragraph Section -->
+                    <div class="col-md-8">
+                        <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;"data-aos="fade-right">
+                            Snow leopards, known as the "ghosts of the mountains," are an elusive and majestic species found in the rugged, mountainous regions of Pakistan. These big cats inhabit several national parks, including the Khunjerab National Park, Deosai National Park, and Chitral Gol National Park, which serve as crucial sanctuaries for their conservation. Snow leopards are perfectly adapted to survive in harsh alpine environments, with thick, smoky-grey fur patterned with rosettes, long bushy tails for balance and warmth, and powerful limbs to navigate steep and rocky terrain. In Pakistan, these cats are primarily found in the Karakoram, Hindu Kush, and Himalayan ranges. The presence of snow leopards in national parks underscores the importance of these protected areas in maintaining biodiversity and supporting the ecosystem of the region. Conservation efforts, such as those spearheaded by the Snow Leopard Foundation and the World Wildlife Fund (WWF), have been instrumental in protecting this endangered species through initiatives like community-based conservation programs, reducing human-wildlife conflict, and curbing poaching. </p>
+                    </div>
+            
+                      <!-- Image Card Section -->
+                      <div class="col-md-4">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="images.html/mountain leapord.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;">
+                            <div class="card-body">
+                                <p class="card-text" style="color: #fff; background-color:0 15px 50px rgba(13, 116, 243, 0.6); ; text-align: center;">Experience the wilderness up close and personal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Our Motto Section -->
+            <div class="col-md-4 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Our Motto</h5>
+                <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.8;">
+                    At Zoofari Park, we believe in bridging the gap between humanity and nature. Our mission is to inspire love and respect for wildlife by providing immersive and educational experiences. By fostering a deeper connection with the natural world, we aim to create lasting memories and encourage stewardship for the planet’s incredible biodiversity.
+                </p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Quick Links</h5>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; font-weight: 500;">
+                    <li><a href="index.html" style="color: #ffffff; text-decoration: none;">Home</a></li>
+                    <li><a href="aboutus.html" style="color: #ffffff; text-decoration: none;">About Us</a></li>
+                    <li><a href="trails.html" style="color: #ffffff; text-decoration: none;">Trails</a></li>
+                    <li><a href="bioinventory.html" style="color: #ffffff; text-decoration: none;">Bio-Inventory</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Our Socials Section -->
+            <div class="col-md-4 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Follow Our Socials</h5>
+                <p>
+                    <a href="https://www.instagram.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-instagram" style="margin-right: 8px;"></i>Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-facebook-f" style="margin-right: 8px;"></i>Facebook
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.youtube.com/@WWFPakistanOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="mt-3 text-center" style="font-size: 1rem; font-weight: 600;">&copy; 2024 Zoofari Park. All rights reserved.</p>
+</footer>
+<script>
+    // List of predefined suggestions with corresponding card-specific URLs
+    const suggestionsWithUrls = {
+        "Central Karakoram National Park": "centralpark.html",
+        "Borghil Valley National Park": "borghil.html",
+        "Kirthar National Park": "kirthar.html",
+        "Saif ul Muluk National Park": "sfm.html",
+        "Chitral National Park": "chitral.html",
+        "Deosai National Park": "deosai.html",
+        "About Us": "aboutus.html",
+        "Nature Trails": "trails.html",
+        "bioinventory": "bioinventory.html",
+         "Contact Us": "contactus.html"
+    };
+
+    function showSuggestions() {
+        const input = document.getElementById("search-input").value.toLowerCase();
+        const suggestionBox = document.getElementById("autocomplete-list");
+        suggestionBox.innerHTML = "";
+
+        if (input.trim() === "") {
+            return; // If input is empty, clear suggestions
+        }
+
+        // Filter suggestions based on input
+        const filteredSuggestions = Object.keys(suggestionsWithUrls).filter(item => item.toLowerCase().includes(input));
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement("div");
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.classList.add("autocomplete-suggestion");
+            suggestionDiv.onclick = () => {
+                window.open(suggestionsWithUrls[suggestion], "_blank"); // Open the corresponding link in a new tab
+            };
+            suggestionBox.appendChild(suggestionDiv);
+        });
+    }
+
+    function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+
+        if (query === "") {
+            alert("Please enter a search term!");
+            return;
+        }
+
+        // Navigate to the corresponding link if the query matches a suggestion
+        if (suggestionsWithUrls[query]) {
+            window.open(suggestionsWithUrls[query], "_blank"); // Open the link in a new tab
+        } else {
+            alert("No matching page found for: " + query);
+        }
+    }
+
+    // Close suggestions dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        const suggestionBox = document.getElementById("autocomplete-list");
+        if (!e.target.closest(".search-container")) {
+            suggestionBox.innerHTML = "";
+        }
+    });
+</script>
+  
+<script>
+    // Function for showing/hiding the hamburger menu on small screens
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+<script src="script.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nature Of Pakistan.">
+    <title>Zoofari Park</title>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS LIBRARY CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWSEOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav> 
+        <!-- Hamburger Icon for Smaller Screens -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">
+            <img src="images.html/filem.png" alt="Logo" class="logo-img" style="height: 90px; width: 110px; border-radius: 50%;">
+          </div>
+        <ul class="nav-links" style="display:black;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="bioinventory.html">Bio-Inventory</a></li>
+        </ul>
+    
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." oninput="showSuggestions()" autocomplete="off">
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images.html/bear1.jpg');" >
+        <div>
+            <h2 class="" data-aos="fade-right">Bio-Inventory</h2>
+        </div>
+    </div>
+
+    <!-- New Section: Big Heading and Paragraph with Image Card -->
+ <div class="description"> 
+    <div class="container my-5">
+        <h3 style="color:rgba(13, 116, 243, 0.6);text-align: center; font-size: 2.5rem;">Endangered Species </h3>
+        <div class="row mt-4">
+            <!-- Paragraph Section -->
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify;" data-aos="fade-right">
+                    Pakistan's national parks are home to a variety of endangered species that are at risk due to habitat loss, poaching, and climate change. Among these species is the Markhor, a wild goat native to the mountainous regions, which is the national animal of Pakistan. The Himalayan Brown Bear, found in the northern areas, is another critically endangered species, with fewer than 1,000 individuals remaining. Additionally, the Indus River Dolphin, once widespread in the river's waters, is now severely threatened by pollution and habitat degradation. These species, along with others like the Persian Leopard and the Western Tragopan, rely on the conservation efforts in national parks like Khunjerab, Hingol, and Deosai to survive and recover from the brink of extinction.Pakistan’s national parks also protect other endangered animals such as the Asiatic Black Bear, the Snow Leopard, and the Vulture population, which has been drastically reduced due to poisoning and habitat disruption. The rare and elusive Punjab Urial, a type of wild sheep, faces a critical decline in numbers due to hunting and loss of grazing areas. The desert ecosystems of Pakistan, such as those in the Thar Desert, are home to the endangered Caracal cat, a small wildcat threatened by habitat fragmentation. Conservation programs in Pakistan's national parks are working to restore habitats, reduce human-wildlife conflict, and combat illegal poaching.</p>
+            </div>
+              <!-- Image Card Section -->
+              <div class="col-md-4">
+                <div class="card" style="overflow: hidden;">
+                    <img src="images.html/black bear.jpg" class="card-img-top" alt="Safari Adventure" style="object-fit: cover; height: 100%;background-color:0 15px 50px rgba(13, 116, 243, 0.6);">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- content -->
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Endangered Snow Leapoards From Ayubia</h2>
+            <h6 style="color:rgba(13, 116, 243, 0.6);"><a href="ayubia.html">Ayubia National Park</a></h6>
+            <p>
+                The Snow Leopard, a majestic and elusive big cat, is found in the mountainous regions of Ayubia National Park, located in the northern part of Pakistan. This endangered species, known for its thick fur and powerful build, thrives in the rugged, snow-covered terrains of the park. Ayubia's high-altitude ecosystems, characterized by steep cliffs and dense forests, provide an ideal habitat for the Snow Leopard, offering shelter and abundant prey such as blue sheep and marmots. However, the species faces significant threats due to habitat loss, poaching, and human-wildlife conflict. Conservation efforts in Ayubia National Park are focused on protecting the Snow Leopard's habitat, reducing poaching activities, and promoting coexistence between local communities and wildlife, to ensure the survival of this magnificent predator in the wild.Snow Leopard's survival is still precarious, as they face challenges such as retaliatory killings by herders and loss of prey due to overhunting. Local communities and conservationists are working together to raise awareness about the importance of protecting the Snow Leopard and its habitat, aiming for a sustainable balance that benefits both wildlife and people.Big cats are solitary and highly territorial, often residing in remote areas that are difficult to access. Despite their elusive nature, signs of their presence—such as paw prints and scrapes on rocks—are often found in the park's rugged terrain. The Snow Leopard's diet primarily consists of mountain ungulates like the Himalayan tahr and markhor, but they also hunt smaller mammals and birds. In recent years, there have been increased efforts to monitor their population in Ayubia through camera traps and tracking initiatives, which have provided valuable insights into their behavior and movements.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/vh.jpg" alt="Zoofari Team" style="height: 600px;">
+        </div>
+    </section>
+
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>The Great Vultures of Chitral</h2>
+            <h6 style="color:rgba(13, 116, 243, 0.6);"><a href="chitral.html">Chitral Gol National Park</a></h6>
+            <p>
+                Vultures in Chitral have been facing a particularly severe crisis due to the widespread use of veterinary drugs such as Diclofenac, which is toxic to these birds when they feed on carcasses of livestock treated with the drug. This has led to a significant decline in vulture populations across the region. Additionally, habitat degradation and human encroachment further exacerbate the challenges they face. The Chitral region, with its vast mountainous landscapes and open valleys, provides an important breeding and feeding ground for these vultures, making it an essential site for their conservation.
+
+Efforts to protect vultures in Chitral are gaining momentum, with local communities and environmental organizations working together to safeguard their habitats. One of the key initiatives involves educating farmers and herders about the dangers of using toxic drugs and promoting the use of vulture-safe alternatives. In addition, the establishment of vulture restaurants—where safe, untreated carcasses are provided for the vultures—has helped create a stable food source and supported the recovery of vulture populations. Research and monitoring programs are also being implemented, including the use of satellite tracking and camera traps to study vulture movements and breeding patterns.
+
+The conservation of vultures in Chitral not only helps in preserving a vital species but also contributes to maintaining the region's ecosystem health. As scavengers, vultures prevent the spread of diseases like anthrax and rabies by consuming animal carcasses that would otherwise become breeding grounds for pathogens.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/vulture.jpg" alt="Zoofari Team" style="height: 600px;">
+        </div>
+    </section>
+
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Himalayan Brown Brown Bears</h2>
+            <h6 style="color:rgba(13, 116, 243, 0.6);"><a href="deosai.html">DeosaiNational Park</a></h6>
+            <p>
+                The Himalayan Brown Bear, a critically endangered species, inhabits the mountainous regions of northern Pakistan, particularly in areas like the Deosai National Park and parts of the Khyber Pakhtunkhwa province. This majestic bear is one of the largest bear species, with a thick fur coat that helps it survive the harsh, cold environments of the high-altitude grasslands and alpine meadows. The Himalayan Brown Bear plays a key role in maintaining the balance of its ecosystem by regulating populations of smaller herbivores and helping to disperse seeds, contributing to plant diversity.
+
+However, the species faces numerous threats to its survival. Habitat loss due to human encroachment, poaching for their fur and body parts, and the depletion of their food sources are the primary challenges. The expansion of agricultural activities and the building of roads in bear habitats have led to increased human-wildlife conflict, with bears sometimes venturing into populated areas in search of food. Additionally, climate change is altering the bear's habitat, affecting the availability of its natural food sources, such as berries, insects, and small mammals.
+
+Conservation efforts for the Himalayan Brown Bear in Pakistan have become more urgent in recent years. The government, alongside local and international wildlife organizations, has been working to protect the bear's natural habitat, establish wildlife corridors, and prevent poaching. Community-based conservation programs are also being implemented to reduce human-wildlife conflict by encouraging locals to adopt bear-friendly practices, such as securing livestock and discouraging harmful hunting practices. Monitoring programs using camera traps and tracking systems help to better understand the bear’s behavior and habitat use, which is crucial for developing effective conservation strategies.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/cub.jpg" alt="Zoofari Team" style="height: 600px;">
+        </div>
+    </section>
+
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Trout Fishes From Borghil</h2>
+            <h6 style="color:rgba(13, 116, 243, 0.6);"><a href="borghil.html">Borghil National Park</a></h6>
+            <p>
+                Trout species, particularly the Brown Trout and Rainbow Trout, are facing significant threats to their survival in the northern regions of Pakistan. These fish, which thrive in the cool, oxygen-rich waters of the Kaghan Valley, Swat, and Gilgit-Baltistan, are increasingly endangered due to several environmental and human-induced factors.
+                One of the primary reasons for the endangered status of trout in these areas is overfishing. With the rise in fishing tourism, the demand for trout has led to unsustainable fishing practices, including illegal methods like the use of explosives and nets, which not only harm the fish population but also damage the fragile river ecosystems. This overfishing, combined with a lack of effective regulation in some areas, has contributed to the decline in trout numbers.
+                
+                The combination of these factors has pushed trout populations to the brink of extinction in some areas. To combat this, conservation efforts have been launched, including hatchery programs to restock rivers with trout, establishing protected fishing zones, and promoting sustainable fishing practices among local communities. However, the future of trout in northern Pakistan remains uncertain unless these endangered species receive more attention and conservation resources.
+                
+                Protecting trout populations is essential, not just for preserving an iconic species, but for maintaining the balance of the ecosystem. 
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/trout.jpg" alt="Zoofari Team">
+        </div>
+    </section>
+
+   <!-- Cards Section -->
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="centralpark.html"> <img src="images.html/central.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">CENTRAL KARAKORAM NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="borghil.html"> <img src="images.html/borghil.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">BORGHIL VALLEY NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="ayubia.html"> <img src="images.html/ayubia 1.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title"> AYUBIA NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="sfm.html"> <img src="images.html/sfm.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">SAIF UL MULUKNATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="chitral.html"> <img src="images.html/chitral.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">CHITRAL NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <a href="deosai.html"> <img src="images.html/deosai.jpg" class="card-img-top" alt="Safari Animal"> </a> 
+                <div class="card-body">
+                        <h3 class="card-title">DEOSAI NATIONAL PARK</h3>
+                        <h5 class="card-text"> CLICK TO GET MORE INFO!!</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        <!-- videos from youtube -->
+        <h1 style="color:rgba(13, 116, 243, 0.6); ; text-align: center;">Watch Our Documentries</h1>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <iframe width="1200" height="675" src="https://www.youtube.com/embed/nG-6I812mWE&t=28s" data-aos="fade-right" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <iframe width="1200" height="675" src="https://www.youtube.com/embed/SliHOBs_Cag" data-aos="fade-right"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <iframe width="1200" height="675" src="https://www.youtube.com/embed/hpvoVWw8hok" data-aos="fade-right"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        
+<!-- footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Our Motto Section -->
+            <div class="col-md-4 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Our Motto</h5>
+                <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.8;">
+                    At Zoofari Park, we believe in bridging the gap between humanity and nature. Our mission is to inspire love and respect for wildlife by providing immersive and educational experiences. By fostering a deeper connection with the natural world, we aim to create lasting memories and encourage stewardship for the planet’s incredible biodiversity.
+                </p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Quick Links</h5>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; font-weight: 500;">
+                    <li><a href="index.html" style="color: #ffffff; text-decoration: none;">Home</a></li>
+                    <li><a href="aboutus.html" style="color: #ffffff; text-decoration: none;">About Us</a></li>
+                    <li><a href="trails.html" style="color: #ffffff; text-decoration: none;">Trails</a></li>
+                    <li><a href="bioinventory.html" style="color: #ffffff; text-decoration: none;">Bio-Inventory</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Our Socials Section -->
+            <div class="col-md-4 text-center">
+                <h5 style="font-size: 1.8rem; font-weight: bold;">Follow Our Socials</h5>
+                <p>
+                    <a href="https://www.instagram.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-instagram" style="margin-right: 8px;"></i>Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;">
+                        <i class="fab fa-facebook-f" style="margin-right: 8px;"></i>Facebook
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.youtube.com/@WWFPakistanOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="mt-3 text-center" style="font-size: 1rem; font-weight: 600;">&copy; 2024 Zoofari Park. All rights reserved.</p>
+</footer>
+<script>
+    // List of predefined suggestions with corresponding card-specific URLs
+    const suggestionsWithUrls = {
+        "Central Karakoram National Park": "centralpark.html",
+        "Borghil Valley National Park": "borghil.html",
+        "Kirthar National Park": "kirthar.html",
+        "Saif ul Muluk National Park": "sfm.html",
+        "Chitral National Park": "chitral.html",
+        "Deosai National Park": "deosai.html",
+        "About Us": "aboutus.html",
+        "Nature Trails": "trails.html",
+        "bioinventory": "bioinventory.html"
+    };
+
+    function showSuggestions() {
+        const input = document.getElementById("search-input").value.toLowerCase();
+        const suggestionBox = document.getElementById("autocomplete-list");
+        suggestionBox.innerHTML = "";
+
+        if (input.trim() === "") {
+            return; // If input is empty, clear suggestions
+        }
+
+        // Filter suggestions based on input
+        const filteredSuggestions = Object.keys(suggestionsWithUrls).filter(item => item.toLowerCase().includes(input));
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement("div");
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.classList.add("autocomplete-suggestion");
+            suggestionDiv.onclick = () => {
+                window.open(suggestionsWithUrls[suggestion], "_blank"); // Open the corresponding link in a new tab
+            };
+            suggestionBox.appendChild(suggestionDiv);
+        });
+    }
+
+    function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+
+        if (query === "") {
+            alert("Please enter a search term!");
+            return;
+        }
+
+        // Navigate to the corresponding link if the query matches a suggestion
+        if (suggestionsWithUrls[query]) {
+            window.open(suggestionsWithUrls[query], "_blank"); // Open the link in a new tab
+        } else {
+            alert("No matching page found for: " + query);
+        }
+    }
+
+    // Close suggestions dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        const suggestionBox = document.getElementById("autocomplete-list");
+        if (!e.target.closest(".search-container")) {
+            suggestionBox.innerHTML = "";
+        }
+    });
+</script>
+  
+<script>
+    // Function for showing/hiding the hamburger menu on small screens
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+<script src="script.js"> </script>
+
+</body>
+</html>

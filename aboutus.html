@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Wild with Zoofari Park">
+    <title>Zoofari Park</title>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS LIBRARY CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <audio autoplay loop >
+        <source src="E-Project audio (online-audio-converter.com).mp3" type="audio/mpeg">
+    </audio>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">
+            <img src="images.html/filem.png" alt="Logo" class="logo-img" style="height: 90px; width: 110px; border-radius: 50%;">
+          </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="bioinventory.html">Bio-Inventory</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." oninput="showSuggestions()" autocomplete="off">
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="autocomplete-list" class="autocomplete-suggestions"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images.html/about us1.jpg'); height: 485px;">
+        <div>
+            <h2 class="" data-aos="fade-right">Experience the Safari Like Never Before</h2>
+            <a href="bioinventory.html" class="cta-button" data-aos="fade-right">EXPLORE NOW</a>
+        </div>
+    </div>
+
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>About us </h2>
+            <p>
+                Welcome to the National Wildlife Sanctuary's Web Portal, your comprehensive guide to exploring the breathtaking national parks of Pakistan. Our country is blessed with extraordinary natural diversity, a stunning contrast of landscapes that range from the towering peaks of the Himalayas and Karakoram to the serene deserts of Thar, and the lush green plateaus of Balochistan. Whether it’s the tranquil beauty of the Himalayan foothills or the vast, open expanses of the Thar Desert, each park within our borders offers a unique perspective on the harmony between nature and humanity. Pakistan's vast topographical diversity includes tropical forests, alpine meadows, desert landscapes, freshwater lakes, and remote mountain valleys, all teeming with abundant wildlife.
+
+                Each national park is not only a sanctuary for rare and endangered species, but also a testament to Pakistan's cultural heritage. From ancient sites that echo the stories of civilizations long past, to communities whose traditions are intertwined with the land, these parks represent a vibrant tapestry of history and biodiversity. These ecological havens preserve a fragile balance between wildlife conservation and sustainable human interaction, fostering a deeper understanding of how nature and society coexist. As you navigate through this portal, we invite you to discover these hidden treasures, learn about the ongoing conservation efforts, and witness how these protected areas play a crucial role in maintaining ecological balance for future generations.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/about us 1.jpg" alt="Zoofari Team">
+        </div>
+    </section>
+    
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Establishment</h2>
+            <p>
+                The Pakistan Wildlife Foundation (PWF) was established in January 2010 as a non-profit conservation organization with the mission to protect, preserve, and restore Pakistan’s rich biodiversity. Officially registered on June 4, 2010, under Section 42 of the Companies Ordinance, 1984, the foundation has since been a cornerstone of wildlife conservation efforts across the country. In October 2010, it was incorporated with the Securities and Exchange Commission of Pakistan (SECP) under Corporate Universal Identification No. 0073723, ensuring compliance with national regulations and standards. Over the years, PWF has played a pivotal role in safeguarding Pakistan’s endangered species, promoting sustainable development, and raising awareness about the importance of conserving natural habitats.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/about us 2.jpg" alt="Zoofari Team">
+        </div>
+    </section>
+    
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Our Team</h2>
+            <p>
+                The core of experts of PWF comprises 50 members, including 26 PhDs, with expertise in all disciplines of wildlife conservation, research, and management. The team includes Plant Taxonomists, Botanists, Foresters, Animal Taxonomists, Ichthyologists, Herpetologists, Ornithologists, Mammalogists, Entomologists, Field Biologists, Environmentalists, Wildlife Ecologists, Wildlife Biologists, Wildlife Managers, Wildlife Damage Control Specialists, Wildlife Rescuers, Conservation Breeding Specialists, Veterinarians, GIS Specialists, Wildlife Photographers, Wildlife Videographers, Wildlife Artists, and Taxidermists. These experts work together to tackle a range of complex issues in wildlife conservation, ensuring the preservation of biodiversity through their diverse skills and collective knowledge.
+            </p>
+            <p>
+                The Technical Advisory Council (TAC) consists of representatives from academia, provincial forests and wildlife departments, conservationists, and activists. This multidisciplinary body provides invaluable guidance, offering technical assistance on a range of issues related to conservation and wildlife management.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/about us 3.jpg" alt="Zoofari Team">
+        </div>
+    </section>
+    
+    <section class="about-container">
+        <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Our Activities</h2>
+            <p><strong>i. Development of Authentic and Up-to-date Checklists of Wildlife Fauna of Pakistan (July to December, 2019)</strong></p>
+            <p>
+                Pakistan hosts a wide range of ecosystem / habitat types. There are snow-covered peaks, permanent snowfields, lush green as well as barren mountains, forests, irrigated plains, riverine tracts, sand dunes and deserts, and coastal areas. Three largest mountain ranges of the world i.e. Karakoram, Hindukush, and Himalayas merge in the northern areas of Pakistan. Similarly, three out of the seven Zoogeographical regions of the world i.e. Oriental, Palearctic, and Ethiopean regions merge in the Balochistan province of Pakistan. Due to such unique geographical and climatic conditions, Pakistan supports a much diversified wildlife fauna. The vertebrate wildlife fauna of Pakistan consists of more than 2,325 species which include;
+            </p>
+            <ul>
+                <li>Freshwater Fish Species = 200</li>
+                <li>Marine Fish Species = 800</li>
+                <li>Amphibians = 24</li>
+                <li>Reptiles = 335</li>
+                <li>Birds = 676</li>
+                <li>Mammals = 290</li>
+            </ul>
+            <p>
+                Unfortunately, not a single website of any government department including provincial wildlife departments, forest departments, directorate of biodiversity, Ministry of Climate Change, Zoological Survey of Pakistan, Non-government Conservation organizations etc. displays the updated lists of wildlife species of Pakistan. Pakistan Wildlife Foundation started this project in July 2019 with the financial assistance of Pakistan Wildlife Conservation Foundation. The objectives are to prepare and publish the authentic and up-to-date checklists of wildlife fauna of Pakistan and re-evaluation and reassessment of vertebrate species of Pakistan. These checklists will be based on a thorough review of available literature, published and unpublished reports of provincial wildlife departments and theses of researchers from different universities and research organizations.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images.html/aboutus 4.jpg" alt="Zoofari Team">
+        </div>
+    </section>
+    
+     <!-- videos from youtube -->
+     <h1 style="color:rgba(13, 116, 243, 0.6); ; text-align: center;">Watch Our Documentries</h1>
+     <div style="display: flex; justify-content: center; align-items: center; height: 100vh;"data-aos="fade-right">
+         <iframe width="1200" height="675" src="https://www.youtube.com/embed/kunDw8289H4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+     <div style="display: flex; justify-content: center; align-items: center; height: 100vh;"data-aos="fade-right">
+         <iframe width="1200" height="675" src="https://www.youtube.com/embed/ZEm4HHpNC4o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+ </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h5>Our Motto</h5>
+                    <p> At Zoofari Park, we believe in bridging the gap between humanity and nature. Our mission is to inspire love and respect for wildlife by providing immersive and educational experiences. By fostering a deeper connection with the natural world, we aim to create lasting memories and encourage stewardship for the planet’s incredible biodiversity.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="trails.html">Trails</a></li>
+                        <li><a href="bioinventory.html">Bio-Inventory</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Follow Our Socials</h5>
+                    <p><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+                    <p><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+                    <p><a href="https://www.youtube.com/@WWFPakistanOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></p>
+
+                </div>
+            </div>
+        </div>
+        <p class="mt-3 text-center">&copy; 2024 Zoofari Park. All rights reserved.</p>
+    </footer>
+
+       
+<script>
+    // List of predefined suggestions with corresponding card-specific URLs
+    const suggestionsWithUrls = {
+        "Central Karakoram National Park": "centralpark.html",
+        "Borghil Valley National Park": "borghil.html",
+        "Kirthar National Park": "kirthar.html",
+        "Saif ul Muluk National Park": "sfm.html",
+        "Chitral National Park": "chitral.html",
+        "Deosai National Park": "deosai.html",
+        "About Us": "aboutus.html",
+        "Nature Trails": "trails.html",
+        "Bio-Inventory": "bioinventory.html",
+            "Contact Us": "contactus.html"
+    };
+
+    function showSuggestions() {
+        const input = document.getElementById("search-input").value.toLowerCase();
+        const suggestionBox = document.getElementById("autocomplete-list");
+        suggestionBox.innerHTML = "";
+
+        if (input.trim() === "") {
+            return; // If input is empty, clear suggestions
+        }
+
+        // Filter suggestions based on input
+        const filteredSuggestions = Object.keys(suggestionsWithUrls).filter(item => item.toLowerCase().includes(input));
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement("div");
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.classList.add("autocomplete-suggestion");
+            suggestionDiv.onclick = () => {
+                window.open(suggestionsWithUrls[suggestion], "_blank"); // Open the corresponding link in a new tab
+            };
+            suggestionBox.appendChild(suggestionDiv);
+        });
+    }
+
+    function performSearch() {
+        const query = document.getElementById("search-input").value.trim();
+
+        if (query === "") {
+            alert("Please enter a search term!");
+            return;
+        }
+
+        // Navigate to the corresponding link if the query matches a suggestion
+        if (suggestionsWithUrls[query]) {
+            window.open(suggestionsWithUrls[query], "_blank"); // Open the link in a new tab
+        } else {
+            alert("No matching page found for: " + query);
+        }
+    }
+
+    // Close suggestions dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        const suggestionBox = document.getElementById("autocomplete-list");
+        if (!e.target.closest(".search-container")) {
+            suggestionBox.innerHTML = "";
+        }
+    });
+</script>
+  
+<script>
+    // Function for showing/hiding the hamburger menu on small screens
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+<script src="script.js"> </script>
+</body>
+
+</html>
